@@ -18,9 +18,11 @@ body{
 main{
     position: absolute;
     width: 500px;
-    top: 50vh;
+    bottom: 0;
     left: 50vw;
-    transform: translateX(-50%) translateY(-50px);
+    transform: translateX(-50%);
+    padding: 0 calc(50vw - 250px) 5vh;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7));
 }
 
 img#logo{
@@ -33,7 +35,7 @@ img#logo{
 }
 
 input[type="search"]{
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
     border: none;
     border-radius: 4px;
     padding: 7px 13px;
@@ -44,7 +46,7 @@ input[type="search"]{
     text-shadow: 0 0 4px black;
 }
 input[type="search"]:focus,input[type="search"]:hover{
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.7);
 }
 input[type="search"]::placeholder{
     color: rgba(255,255,255,0.9);
@@ -53,4 +55,45 @@ input[type="search"]::placeholder{
 }
 input[type="search"]:focus::placeholder{
     opacity: 0;
+}
+
+#services{
+    text-align: center;
+    padding-top: 10px;
+}
+.service{
+    display: inline-block;
+    width: 110px;
+    box-sizing: border-box;
+    padding: 5px;
+    text-shadow: 0 0 7px black;
+    border-radius: 5px;
+    vertical-align: top;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s;
+}
+.service:hover,.service:focus{
+    background: rgba(0,0,0,0.3);
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.service > i:first-child{
+    display: block;
+    font-size: 3em;
+    padding: 5px;
+}
+
+nav{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 4px black;
+    margin: 0 5px;
+}
+nav > a:hover{
+    text-decoration: underline;
 }
