@@ -9,5 +9,8 @@ document.addEventListener("DOMContentLoaded",function(){
             info.appendChild(title);
         }
         document.body.append(info);
+        if(typeof config.sitename !== "undefined"){
+            document.title = config.sitename;
+        }
     }
 });
