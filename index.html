@@ -18,21 +18,19 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script src="./js/index.js"></script>
+    <script src="./js/clock.js"></script>
     <script src="./config.js"></script>
 </head>
 <body>
+<h1>
+    <img id="logo" src="./img/logo.png" alt="logo">
+</h1>
 <nav>
     <a href="https://mail.google.com">Gmail</a>
     <a href="https://google.com">Google</a>
     <a href="https://www.google.com/imghp">画像検索</a>
 </nav>
 <main>
-    <img id="logo" src="./img/logo.png" alt="logo">
-    <form action="https://google.com/search">
-        <label>
-            <input type="search" name="q" placeholder="Search on Google">
-        </label>
-    </form>
     <div id="services">
         <a class="service" href="https://imastodon.net">
             <i class="fas fa-at"></i>im@stodon
@@ -48,5 +46,9 @@
         </a>
     </div>
 </main>
+<div id="more">
+    <span id="date"></span>
+    <span id="clock"></span>
+</div>
 </body>
 </html>

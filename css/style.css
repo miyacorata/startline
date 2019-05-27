@@ -15,23 +15,28 @@ body{
     font-family: 'Segoe UI','VL PGothic','Meiryo UI',sans-serif;
 }
 
+h1{
+    margin: 0;
+    padding: 10px 0 0 25px;
+}
+
 main{
     position: absolute;
-    width: 500px;
+    width: 100vw;
     bottom: 0;
-    left: 50vw;
-    transform: translateX(-50%);
-    padding: 0 calc(50vw - 250px) 60px;
+    right: 0;
+    padding: 0 20px 20px 50vw;
+    box-sizing: border-box;
     background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.7));
 }
 
 img#logo{
     display: block;
-    margin: 0 auto 20px;
+    margin: 0;
     max-width: 300px;
     max-height: 200px;
     object-fit: contain;
-    filter: drop-shadow(0 0 5px black);
+    filter: drop-shadow(0 0 10px black);
 }
 
 input[type="search"]{
@@ -58,11 +63,11 @@ input[type="search"]:focus::placeholder{
 }
 
 #services{
-    text-align: center;
-    padding-top: 10px;
+    text-align: right;
 }
 .service{
     display: inline-block;
+    text-align: center;
     width: 110px;
     box-sizing: border-box;
     padding: 5px;
@@ -99,11 +104,9 @@ nav > a:hover{
 }
 
 #comment{
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
+    padding-top: 5px;
+    width: auto;
     font-size: 15px;
-    text-align: center;
     text-shadow: 0 0 4px black;
     animation: fade 1.5s ease-out;
 }
@@ -116,4 +119,23 @@ nav > a:hover{
     0%   { opacity: 0; }
     20%  { opacity: 0; }
     100% { opacity: 1; }
+}
+
+#more{
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: white;
+    text-shadow: 0 0 12px black;
+}
+#date,#clock{
+    animation: fade 5s ease-out;
+}
+#date{
+    font-size: 30px;
+    display: block;
+}
+#clock{
+    font-size: 80px;
+    line-height: 80px;
 }

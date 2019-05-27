@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",function(){
             title.innerText = config.title;
             info.appendChild(title);
         }
-        document.body.append(info);
+        document.getElementById("more").append(info);
         if(typeof config.sitename !== "undefined"){
             document.title = config.sitename;
         }
