@@ -132,10 +132,10 @@ nav > a:hover{
     animation: fade 5s ease-out;
 }
 #date{
-    font-size: 30px;
+    font-size: 40px;
     display: block;
 }
 #clock{
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 100px;
+    line-height: 100px;
 }
