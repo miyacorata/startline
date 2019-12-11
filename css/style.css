@@ -4,7 +4,7 @@
 
 /*PC用の定義*/
     body{
-        background: rgb(252, 31, 31) url('../img/background.png') no-repeat top center;
+        background: rgb(252, 31, 31) url('https://million.765pro-theater.com/miyano/img/img/background.png') no-repeat top center;
         background-size: cover;
         position: relative;
         height: 100vh;
@@ -28,37 +28,28 @@
         line-height: 100px;
     }
 
- 
-@media screen and (max-width: 896px) and (orientation: landscape) {  /*タブレット横用*/
-    body{
-        background: #000 url('../img/background.png') no-repeat top center;
-        background-size: cover;
-        position: relative;
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
-        color: white;
-        margin: 0;
-        padding: 0;
-        font-family: 'Segoe UI','VL PGothic','Meiryo UI',sans-serif;
-    }
-
-    #date,#clock{
-        animation: fade 5s ease-out;
-    }
-    #date{
-        font-size: 40px;
+    img#logo{
         display: block;
+        margin: 0;
+        max-width: 300px;
+        max-height: 200px;
+        object-fit: contain;
+        filter: drop-shadow(0 0 10px black);
     }
-    #clock{
-        font-size: 100px;
-        line-height: 100px;
+
+    @media screen and (max-width: 896px) and (min-width: 481px) and (orientation: portrait)  { 
+  
+    img#logo{
+        display: block;
+        margin: 0;
+        max-width: 50px;
+        max-height: 50px;
+        object-fit: contain;
+        filter: drop-shadow(0 0 10px black);
     }
-}
-@media screen and (min-width: 481px) and (max-width: 768px) { 
 
     body{
-        background: #4b4ba3 url('../img/background_sp.png') no-repeat top center;/*スマホ用の素材とか用意しな！*/
+        background: #4b4ba3 url('https://million.765pro-theater.com/miyano/img/img/background_sp.png') no-repeat top center;/*スマホ用の素材とか用意しな！*/
         background-size: cover;
         position: relative;
         height: 100vh;
@@ -82,6 +73,15 @@
         line-height: 20px;
     }
 
+    img#logo{
+        display: block;
+        margin: 0;
+        max-width: 100px;
+        max-height: 100px;
+        object-fit: contain;
+        filter: drop-shadow(0 0 10px black);
+    }
+
 }
 
 
@@ -101,14 +101,7 @@ main{
     background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0) 100px,rgba(0,0,0,0));
 }
 
-img#logo{
-    display: block;
-    margin: 0;
-    max-width: 300px;
-    max-height: 200px;
-    object-fit: contain;
-    filter: drop-shadow(0 0 10px black);
-}
+
 
 input[type="search"]{
     background: rgba(0,0,0,0.5);
