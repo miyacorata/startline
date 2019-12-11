@@ -2,18 +2,89 @@
     outline: none;
 }
 
-body{
-    background: #000 url('../img/background.jpg') no-repeat top center;
-    background-size: cover;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    color: white;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI','VL PGothic','Meiryo UI',sans-serif;
+/*PC用の定義*/
+    body{
+        background: rgb(252, 31, 31) url('../img/background.png') no-repeat top center;
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI','VL PGothic','Meiryo UI',sans-serif;
+    }
+
+    #date,#clock{
+        animation: fade 5s ease-out;
+    }
+    #date{
+        font-size: 40px;
+        display: block;
+    }
+    #clock{
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+ 
+@media screen and (max-width: 896px) and (orientation: landscape) {  /*タブレット横用*/
+    body{
+        background: #000 url('../img/background.png') no-repeat top center;
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI','VL PGothic','Meiryo UI',sans-serif;
+    }
+
+    #date,#clock{
+        animation: fade 5s ease-out;
+    }
+    #date{
+        font-size: 40px;
+        display: block;
+    }
+    #clock{
+        font-size: 100px;
+        line-height: 100px;
+    }
 }
+@media screen and (min-width: 481px) and (max-width: 768px) { 
+
+    body{
+        background: #4b4ba3 url('../img/background_sp.png') no-repeat top center;/*スマホ用の素材とか用意しな！*/
+        background-size: cover;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        color: white;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI','VL PGothic','Meiryo UI',sans-serif;
+    }
+
+    #date,#clock{
+        animation: fade 5s ease-out;
+    }
+    #date{
+        font-size: 20px;
+        display: block;
+    }
+    #clock{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+}
+
+
 
 h1{
     margin: 0;
@@ -152,15 +223,4 @@ nav > a:hover{
     left: 30px;
     color: white;
     text-shadow: 0 0 12px black;
-}
-#date,#clock{
-    animation: fade 5s ease-out;
-}
-#date{
-    font-size: 40px;
-    display: block;
-}
-#clock{
-    font-size: 100px;
-    line-height: 100px;
 }
