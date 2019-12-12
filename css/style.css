@@ -3,13 +3,13 @@
 }
 
 /*PC用の定義*/
-/* bodyでもいいけどbodyでするとiPhoneのsafeareaが赤とかの背景表示されるので修正 */
-    html{
+/* iPhoneのsafeareaが赤とかの背景表示されるので修正 */
+    body{
         background: rgb(252, 31, 31) url('https://million.765pro-theater.com/miyano/img/img/background.png') no-repeat top center;
         background-size: cover;
         position: relative;
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
         overflow: hidden;
         color: white;
         margin: 0;
@@ -132,7 +132,8 @@ h1{
 
 main{
     position: absolute;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
     bottom: 0;
     right: 0;
     padding: 0 10px 5px 50vw;
