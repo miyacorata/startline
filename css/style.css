@@ -3,7 +3,8 @@
 }
 
 /*PC用の定義*/
-    body{
+/* bodyでもいいけどbodyでするとiPhoneのsafeareaが赤とかの背景表示されるので修正 */
+    html{
         background: rgb(252, 31, 31) url('https://million.765pro-theater.com/miyano/img/img/background.png') no-repeat top center;
         background-size: cover;
         position: relative;
@@ -36,6 +37,38 @@
         object-fit: contain;
         filter: drop-shadow(0 0 10px black);
     }
+    @media only screen and (min-width: 414px) and(min-width:876px) and (orientation: landscape)  { 
+        /* ζ'ヮ')ζ＜横画面の時ですよー */
+           
+        body{
+            background: rgb(252, 31, 31) url('https://million.765pro-theater.com/miyano/img/img/background.png') no-repeat top center;
+            background-size: cover;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI','VL PGothic','Meiryo UI',sans-serif;
+             /* iPhoneのsafearea対策 */
+        padding-right:  constant(safe-area-inset-right);
+        padding-left:  constant(safe-area-inset-left);
+        }
+
+        #date,#clock{
+            animation: fade 5s ease-out;
+        }
+        #date{
+            font-size: 20px;
+            display: block;
+        }
+        #clock{
+            font-size: 20px;
+            line-height: 20px;
+        }
+    
+}
 
     @media only screen and (min-width: 414px) and (orientation: portrait)  { /*なぜかiPhone 11 Pro Maxの解像度が馬鹿なのでとりあえず定義しておきます。 */
 
@@ -48,17 +81,22 @@
             filter: drop-shadow(0 0 10px black);
         }
     
-        body{
+        html{
             background: #4b4ba3 url('https://million.765pro-theater.com/miyano/img/img/background_sp.png') no-repeat top center;/*スマホ用の素材とか用意しな！*/
             background-size: cover;
             position: relative;
-            height: 100vh;
-            width: 100vw;
+            height: 100%;
+            width: 100%;
             overflow: hidden;
             color: white;
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI','VL PGothic','Meiryo UI',sans-serif;
+            /* iPhoneのsafearea対策 */
+            padding-right:  constant(safe-area-inset-right);
+            padding-left:  constant(safe-area-inset-left);
+            padding-right:  env(safe-area-inset-right);
+            padding-left:  env(safe-area-inset-left);
         }
     
         #date,#clock{
@@ -83,52 +121,7 @@
         }
     
     }
-    @media screen and (max-width: 896px) and (min-width: 481px) and (orientation: portrait) {  /*上の定義で行けるならここコメントアウトしてもいいかも*/
   
-    img#logo{
-        display: block;
-        margin: 0;
-        max-width: 50px;
-        max-height: 50px;
-        object-fit: contain;
-        filter: drop-shadow(0 0 10px black);
-    }
-
-    body{
-        background: #4b4ba3 url('https://million.765pro-theater.com/miyano/img/img/background_sp.png') no-repeat top center;/*スマホ用の素材とか用意しな！*/
-        background-size: cover;
-        position: relative;
-        height: 100vh;
-        width: 100vw;
-        overflow: hidden;
-        color: white;
-        margin: 0;
-        padding: 0;
-        font-family: 'Segoe UI','VL PGothic','Meiryo UI',sans-serif;
-    }
-
-    #date,#clock{
-        animation: fade 5s ease-out;
-    }
-    #date{
-        font-size: 20px;
-        display: block;
-    }
-    #clock{
-        font-size: 20px;
-        line-height: 20px;
-    }
-
-    img#logo{
-        display: block;
-        margin: 0;
-        max-width: 100px;
-        max-height: 100px;
-        object-fit: contain;
-        filter: drop-shadow(0 0 10px black);
-    }
-
-}
 
 
 
