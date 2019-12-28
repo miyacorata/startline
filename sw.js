@@ -3,6 +3,7 @@ var CACHE_NAME = 'startline-pwa-caches';
 var urlsToCache = [
     "index.html",
     "clock.html",
+    "https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c&display=swap&subset=japanese",
     "https://use.fontawesome.com/releases/v5.8.2/css/all.css",
     "css/style.css",
     "js/index.js",
