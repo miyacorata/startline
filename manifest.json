@@ -5,6 +5,7 @@
     "background_color":"#6bb6b0",
     "theme_color":"#000000",
     "display":"standalone",
+    "orientation":"landscape",
     "icons":[
         {
             "src":"/img/startline_192.png",
