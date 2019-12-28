@@ -1,0 +1,20 @@
+{
+    "name":"St@rtline",
+    "description":"Let's find your wind!",
+    "start_url":"/clock.html",
+    "background_color":"#6bb6b0",
+    "theme_color":"#000000",
+    "display":"standalone",
+    "icons":[
+        {
+            "src":"/img/startline_192.png",
+            "sizes":"192x192",
+            "type":"image/png"
+        },
+        {
+            "src":"/img/startline_512.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        }
+    ]
+}
